@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Department Page</title>
+    <style>
+        body {
+            margin: 0;
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "nav main"
+                "footer footer";
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            background: #511616;
+            color: white;
+            padding: 10px;
+        }
+
+        nav {
+            grid-area: nav;
+            background: #ddd;
+            padding: 10px;
+        }
+
+        main {
+            grid-area: main;
+            padding: 10px;
+        }
+
+        footer {
+            grid-area: footer;
+            background: #444;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Department of Computer Science</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Faculty</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Welcome</h2>
+            <p>This is a modern layout using HTML and CSS Grid.</p>
+        </section>
+        <aside>
+            <h3>Notice Board</h3>
+            <p>Latest updates and announcements.</p>
+        </aside>
+    </main>
+    <footer>
+        &copy; 2026 Department of Computer Science
+    </footer>
+</body>
+
+</html>
